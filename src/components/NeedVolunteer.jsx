@@ -96,6 +96,7 @@ const NeedVolunteer = () => {
           </div>
         </div>
       </section>
+      
       <section className="bg-slate-100 rounded mb-10">
         <div className="pt-2 pb-5">
           <div className="flex justify-center">
