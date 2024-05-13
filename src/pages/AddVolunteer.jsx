@@ -59,6 +59,7 @@ const AddVolunteer = () => {
             alt=""
           />
         </div>
+        
 
         <form onSubmit={handleFormSubmit}>
           <div class="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
