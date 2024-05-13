@@ -9,7 +9,6 @@ const Services = () => {
             explore our <br /> awesome{" "}
             <span class="underline decoration-blue-500">Components</span>
           </h1>
-
           <p class="mt-4 text-gray-500 max-w-[1100px] xl:mt-6 dark:text-gray-300">
           Welcome to our comprehensive collection of components! Dive into our selection and discover the building blocks for your next project. From sleek and modern to classic and timeless, our components cater to a wide range of styles and needs. Whether you're a seasoned designer or just starting out, our diverse range ensures you'll find the perfect fit for your project. Explore our components now and bring your ideas to life!
           </p>
