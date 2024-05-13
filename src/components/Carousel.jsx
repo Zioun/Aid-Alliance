@@ -36,6 +36,7 @@ const Carousel = () => {
               src="https://i.ibb.co/5hwBV0W/New-Project-20.jpg"
               alt=""
             />
+            
             <div className="absolute top-[50%] left-[50%] translate-x-[-50%]
             translate-y-[-50%] text-center">
               <h1 className="text-white text-[40px]">
