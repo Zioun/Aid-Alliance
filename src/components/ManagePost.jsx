@@ -4,6 +4,7 @@ import { AuthContext } from "../provider/AuthProvider";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
 import { MdClear } from "react-icons/md";
+import { Helmet } from "react-helmet";
 
 const ManagePost = () => {
   const { user } = useContext(AuthContext);
@@ -62,6 +63,9 @@ const ManagePost = () => {
   };
   return (
     <div className="container m-auto pb-5 px-6">
+      <Helmet>
+                <title>AidAlliance - Manage Post</title>
+            </Helmet>
       <div>
         <section className="bg-white dark:bg-gray-900">
           <div className="container px-6 py-10 mx-auto text-center">
@@ -389,9 +393,9 @@ const ManagePost = () => {
                             {reqVolunteer.location}
                           </td>
                           <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                            {new Date(
+                            {/* {new Date(
                               reqVolunteer.deadline
-                            ).toLocaleDateString()}
+                            ).toLocaleDateString()} */}
                           </td>
                           <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
                             <textarea

@@ -8,7 +8,7 @@ import { AuthContext } from "./../provider/AuthProvider";
 const Navigation = () => {
   const { user, logOut } = useContext(AuthContext);
   return (
-    <div className="navbar bg-base-100 px-10">
+    <div className="navbar bg-base-100 md:px-10">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -50,7 +50,8 @@ const Navigation = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <img src="https://i.ibb.co/PmpGsm2/360-F-272398712-z28-EMWLb-M9-Y8zojg51t-LZo4-D8-Ju3-R7-EG-1.jpg" className="h-[40px]" alt="" />
+        <h1 className="font-sans font-semibold ml-2 md:text-2xl">AidAlliance</h1>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 z-50">

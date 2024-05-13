@@ -10,9 +10,8 @@ const Services = () => {
             <span class="underline decoration-blue-500">Components</span>
           </h1>
 
-          <p class="mt-4 text-gray-500 xl:mt-6 dark:text-gray-300">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
-            quam voluptatibus
+          <p class="mt-4 text-gray-500 max-w-[1100px] xl:mt-6 dark:text-gray-300">
+          Welcome to our comprehensive collection of components! Dive into our selection and discover the building blocks for your next project. From sleek and modern to classic and timeless, our components cater to a wide range of styles and needs. Whether you're a seasoned designer or just starting out, our diverse range ensures you'll find the perfect fit for your project. Explore our components now and bring your ideas to life!
           </p>
 
           <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3">
@@ -22,13 +21,11 @@ const Services = () => {
               </span>
 
               <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-                Copy & paste components
+              Explore Our Volunteer Opportunities
               </h1>
 
               <p class="text-gray-500 dark:text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident ab nulla quod dignissimos vel non corrupti doloribus
-                voluptatum eveniet
+              Discover a variety of meaningful volunteer opportunities in your community. Whether you're passionate about supporting the homeless, promoting literacy, or caring for the environment, there's a role for you.
               </p>
             </div>
             <div class="space-y-3">
@@ -37,13 +34,11 @@ const Services = () => {
               </span>
 
               <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-                Copy & paste components
+              Copy & Paste Components
               </h1>
 
               <p class="text-gray-500 dark:text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident ab nulla quod dignissimos vel non corrupti doloribus
-                voluptatum eveniet
+              Volunteer on your terms. With flexible scheduling options, it's easy to find volunteer opportunities that fit your busy lifestyle. Make a difference in your community on your own time.
               </p>
             </div>
             <div class="space-y-3">
@@ -52,13 +47,11 @@ const Services = () => {
               </span>
 
               <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-                Copy & paste components
+              Support Local Communities
               </h1>
 
               <p class="text-gray-500 dark:text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident ab nulla quod dignissimos vel non corrupti doloribus
-                voluptatum eveniet
+              Join us in making a positive impact in your community. Volunteer your time and skills to support local initiatives and make a difference where it's needed most.
               </p>
             </div>
             <div class="space-y-3">
@@ -67,13 +60,12 @@ const Services = () => {
               </span>
 
               <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-                Copy & paste components
+              Explore Diverse Roles
+
               </h1>
 
               <p class="text-gray-500 dark:text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident ab nulla quod dignissimos vel non corrupti doloribus
-                voluptatum eveniet
+              Become part of our volunteer team and explore a variety of fulfilling roles. From event planning to direct service, there's something for everyone. Join us and make a difference today.
               </p>
             </div>
             <div class="space-y-3">
@@ -82,13 +74,11 @@ const Services = () => {
               </span>
 
               <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-                Copy & paste components
+              Volunteer for a Cause
               </h1>
 
               <p class="text-gray-500 dark:text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident ab nulla quod dignissimos vel non corrupti doloribus
-                voluptatum eveniet
+              Support those in need by volunteering your time and expertise. Whether it's helping the homeless, supporting mental health, or assisting with disaster relief, your efforts can change lives.
               </p>
             </div>
             <div class="space-y-3">
@@ -97,13 +87,11 @@ const Services = () => {
               </span>
 
               <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-                Copy & paste components
+              Make a Positive Impact
               </h1>
 
               <p class="text-gray-500 dark:text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident ab nulla quod dignissimos vel non corrupti doloribus
-                voluptatum eveniet
+              Ready to get started? Begin your volunteer journey today and make a positive impact in your community. Your time and effort can make a world of difference.
               </p>
             </div>
           </div>

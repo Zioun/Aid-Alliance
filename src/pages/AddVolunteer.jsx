@@ -5,6 +5,7 @@ import { AuthContext } from "../provider/AuthProvider";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { Helmet } from "react-helmet";
 
 const AddVolunteer = () => {
   const [startDate, setStartDate] = useState(new Date());
@@ -49,6 +50,9 @@ const AddVolunteer = () => {
   return (
     <>
       <section class="max-w-4xl p-6 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800 border my-10">
+      <Helmet>
+                <title>AidAlliance - Add Volunteer</title>
+            </Helmet>
         <div className="flex justify-center">
           <img
             src="https://i.ibb.co/dpVFdTR/volunteers-needed-button-speech-bubble-volunteer-needed-web-banner-template-illustration-vector-remo.png"

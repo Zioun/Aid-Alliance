@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { CiLocationArrow1 } from "react-icons/ci";
 import { SlCalender } from "react-icons/sl";
 import { Link, useLoaderData } from "react-router-dom";
@@ -18,6 +19,9 @@ const Details = () => {
   return (
     <div>
       <section class="bg-white dark:bg-gray-900">
+      <Helmet>
+                <title>AidAlliance - Details</title>
+            </Helmet>
         <div class="container px-6 py-10 mx-auto">
           <div class="lg:-mx-6 lg:flex lg:items-center">
             <img

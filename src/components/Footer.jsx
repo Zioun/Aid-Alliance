@@ -20,7 +20,7 @@ const FooterBottom = () => {
               href="https://flowbite.com"
               src="https://i.ibb.co/PmpGsm2/360-F-272398712-z28-EMWLb-M9-Y8zojg51t-LZo4-D8-Ju3-R7-EG-1.jpg"
               alt="Flowbite Logo"
-              name="Flowbite"
+              name="AidAlliance"
             />
           </div>
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">

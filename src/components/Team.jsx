@@ -6,13 +6,11 @@ const Team = () => {
       <section class="bg-white dark:bg-gray-900">
         <div class="container px-6 py-10 mx-auto">
           <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
-            Our <span class="text-blue-500">Executive Team</span>
+          Volunteer  <span class="text-blue-500">Opportunities</span>
           </h1>
 
           <p class="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-            incidunt ex placeat modi magni quia error alias, adipisci rem
-            similique, at omnis eligendi optio eos harum.
+          Explore a variety of volunteer opportunities in your area. Whether you're passionate about helping the homeless, supporting education, or caring for the environment, there's a role for you.
           </p>
 
           <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-2">
@@ -20,24 +18,25 @@ const Team = () => {
               <div class="flex flex-col sm:-mx-4 sm:flex-row">
                 <img
                   class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300"
-                  src=""
+                  src="https://i.ibb.co/bLvgQw8/istockphoto-472892788-612x612.jpg"
                   alt=""
                 />
 
                 <div class="mt-4 sm:mx-4 sm:mt-0">
                   <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white">
-                    arthur melo
+                  Brian Johnson
                   </h1>
 
                   <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">
-                    design director
+                  Food Bank
                   </p>
                 </div>
               </div>
 
               <p class="mt-4 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                nesciunt officia aliquam neque optio? Cumque facere numquam est.
+              Brian volunteers at the local food bank, sorting and distributing food to families in need. His commitment to fighting hunger and his compassionate nature make a significant difference in the lives of those struggling with food insecurity.
+
+
               </p>
 
               <div class="flex mt-4 -mx-2">
@@ -91,24 +90,23 @@ const Team = () => {
               <div class="flex flex-col sm:-mx-4 sm:flex-row">
                 <img
                   class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300"
-                  src=""
+                  src="https://i.ibb.co/ZfsgCK7/featured-individual-volunteer.jpg"
                   alt=""
                 />
 
                 <div class="mt-4 sm:mx-4 sm:mt-0">
                   <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white">
-                    arthur melo
+                  Sophia Nguyen
                   </h1>
 
                   <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">
-                    design director
+                  Literacy Program
                   </p>
                 </div>
               </div>
 
               <p class="mt-4 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                nesciunt officia aliquam neque optio? Cumque facere numquam est.
+              Sophia is passionate about promoting literacy in her community. She volunteers at a local library, tutoring children and adults in reading and writing skills. Sophia's dedication helps individuals develop essential literacy skills and opens doors to new opportunities.
               </p>
 
               <div class="flex mt-4 -mx-2">
@@ -162,24 +160,23 @@ const Team = () => {
               <div class="flex flex-col sm:-mx-4 sm:flex-row">
                 <img
                   class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300"
-                  src=""
+                  src="https://i.ibb.co/47RnvTB/Volunteer-Iamge.jpg"
                   alt=""
                 />
 
                 <div class="mt-4 sm:mx-4 sm:mt-0">
                   <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white">
-                    arthur melo
+                  Marcus Thompson
                   </h1>
 
                   <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">
-                    design director
+                  Community Development
                   </p>
                 </div>
               </div>
 
               <p class="mt-4 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                nesciunt officia aliquam neque optio? Cumque facere numquam est.
+              Marcus is dedicated to improving his community through volunteer work. He organizes neighborhood clean-up events, revitalization projects, and community-building initiatives. Marcus's leadership and commitment inspire others to take an active role in making their community a better place.
               </p>
 
               <div class="flex mt-4 -mx-2">
@@ -233,24 +230,23 @@ const Team = () => {
               <div class="flex flex-col sm:-mx-4 sm:flex-row">
                 <img
                   class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300"
-                  src=""
+                  src="https://i.ibb.co/f4j04f8/Volunteer-Square-300x300.jpg"
                   alt=""
                 />
 
                 <div class="mt-4 sm:mx-4 sm:mt-0">
                   <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white">
-                    arthur melo
+                  Jennifer Garcia
                   </h1>
 
                   <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">
-                    design director
+                  Mental Health Support
                   </p>
                 </div>
               </div>
 
               <p class="mt-4 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                nesciunt officia aliquam neque optio? Cumque facere numquam est.
+              Jennifer volunteers at a mental health hotline, providing support and resources to individuals in crisis. Her empathy and active listening skills help those struggling with mental health issues feel heard and supported. Jennifer's dedication makes a significant impact on the well-being of others.
               </p>
 
               <div class="flex mt-4 -mx-2">
