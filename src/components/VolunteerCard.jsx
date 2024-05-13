@@ -36,8 +36,7 @@ const VolunteerCard = ({ volunteer }) => {
                   <CiLocationArrow1 />
                 </span>{" "}
                 {location}
-              </span>
-              
+              </span>  
             </span>
           </div>
           <a
