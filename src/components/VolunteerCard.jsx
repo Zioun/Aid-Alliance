@@ -37,6 +37,7 @@ const VolunteerCard = ({ volunteer }) => {
                 </span>{" "}
                 {location}
               </span>
+              
             </span>
           </div>
           <a
