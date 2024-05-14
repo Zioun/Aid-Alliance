@@ -106,6 +106,7 @@ const Register = () => {
               >
                 Email Address
               </label>
+              
               <input
                 id="LoggingEmailAddress"
                 autoComplete="email"
