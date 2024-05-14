@@ -86,7 +86,6 @@ const Login = () => {
             backgroundImage: `url(https://i.ibb.co/3fK1k6M/New-Project-16.jpg)`,
           }}
         ></div>
-
         <div className="w-full px-6 py-8 md:px-8 lg:w-1/2">
           <div className="flex justify-center mx-auto">
             <img
