@@ -60,6 +60,7 @@ const BeAVolunteer = () => {
       <div className="flex justify-center">
         <img src="https://i.ibb.co/bQ8RfZZ/amrc-vbanner-1.png" alt="profile" />
       </div>
+      
 
       <form onSubmit={handleFormSubmit}>
         <div class="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
