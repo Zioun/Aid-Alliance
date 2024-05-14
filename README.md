@@ -2,7 +2,7 @@
 
 Welcome to **AidAlliance** - a platform where volunteers meet organizations in need.
 
-![AidAlliance](https://volunteer-e5e10.web.app/static/media/logo.6d9294d9.png)
+![AidAlliance](https://i.ibb.co/PmpGsm2/360-F-272398712-z28-EMWLb-M9-Y8zojg51t-LZo4-D8-Ju3-R7-EG-1.jpg)
 
 
 ## Description
