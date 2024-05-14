@@ -31,6 +31,7 @@ const Details = () => {
             />
 
             <div class="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
+              
               <p class="text-5xl font-semibold text-blue-500 ">“</p>
 
               <h1 class="text-2xl font-semibold text-gray-800 dark:text-white lg:text-3xl lg:w-96">
