@@ -60,6 +60,7 @@ const Router = createBrowserRouter([
             //     path: "/applied-post",
             //     element: <PrivateRoute><AppliedPost /></PrivateRoute>,
             // },
+            
           ],
     },
 ]);
