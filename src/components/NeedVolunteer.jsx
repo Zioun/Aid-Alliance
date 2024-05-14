@@ -118,7 +118,7 @@ const NeedVolunteer = () => {
               </button>
             </form>
           </div>
-          <div className="flex justify-end -mt-9 pr-5">
+          <div className="flex justify-end sm:-mt-9 pr-5 mt-5">
             <div className="flex gap-5">
               <button onClick={handleBox} className="text-[25px]">
                 <FaTableCellsLarge />

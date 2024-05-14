@@ -48,7 +48,7 @@ const VolunteerCard = ({ volunteer }) => {
             {title}
           </a>
           <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-            {description && description.substring(0, 200) + "....."}
+            {description && description.substring(0, 150) + "....."}
           </p>
         </div>
         <div className="mt-4">
