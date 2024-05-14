@@ -53,7 +53,7 @@ const UpdateVolunteer = () => {
         text: "Volunteer update Successfully!",
         icon: "success"
       });
-      navigate("/need-volunteer");
+      navigate("/manage-my-post");
     } catch (err) {
       console.log(err);
     }
