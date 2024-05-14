@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { Helmet } from "react-helmet";
+import Swal from "sweetalert2";
 
 const AddVolunteer = () => {
   const [startDate, setStartDate] = useState(new Date());
@@ -21,6 +22,12 @@ const AddVolunteer = () => {
     const location = form.location.value;
     const noOfVolunteersNeeded = form.noOfVolunteersNeeded.value;
     const description = form.description.value;
+    if(thumbnail === '' || title === '' || deadline === '' || category === '' || location === '' || noOfVolunteersNeeded === '' || description === ''){
+      return toast.error("Input Can't be empty")
+    }
+    if(noOfVolunteersNeeded < 1 ){
+      return toast.error("No of volunteers can't be less than 1")
+    }
     const volunteerData = {
       thumbnail,
       title,
@@ -41,7 +48,11 @@ const AddVolunteer = () => {
         volunteerData
       );
       console.log(data);
-      toast.success("Volunteer post added Successfully!");
+      Swal.fire({
+        title: "Success!",
+        text: "Volunteer post added Successfully!",
+        icon: "success"
+      });      
       navigate('/need-volunteer');
     } catch (err) {
       console.log(err);
@@ -49,7 +60,20 @@ const AddVolunteer = () => {
   };
   return (
     <>
-      <section class="max-w-4xl p-6 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800 border my-10">
+    <section className="bg-white dark:bg-gray-900">
+        <div className="container px-6 pt-10 mx-auto text-center">
+          <div className="mx-auto">
+            <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
+              Add <span className="text-blue-500">Volunteer Post</span>
+            </h1>
+
+            <p className="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
+            Welcome to the 'Add Volunteer Post' section! If you're looking for volunteers for your upcoming event, project, or cause, you're in the right place. Fill out the details below to create a post and reach out to our community of eager volunteers. Together, we can make a difference!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-4xl mx-2 p-6 md:mx-auto bg-white rounded-md shadow-md dark:bg-gray-800 border my-10">
       <Helmet>
                 <title>AidAlliance - Add Volunteer</title>
             </Helmet>
@@ -190,7 +214,7 @@ const AddVolunteer = () => {
                   <input
                     id="Organizer email"
                     type="email"
-                    value={user.email}
+                    value={user?.email}
                     disabled
                     class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring text-[13px]"
                   />

@@ -23,7 +23,7 @@ const VolunteerCard = ({ volunteer }) => {
       />
       <div className="p-6">
         <div>
-          <div className="flex justify-between">
+          <div className="flex flex-wrap gap-5 justify-between">
             <span className="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">
               {category}
             </span>
@@ -52,7 +52,7 @@ const VolunteerCard = ({ volunteer }) => {
           </p>
         </div>
         <div className="mt-4">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-wrap gap-5 items-center justify-between">
             <div className="flex items-center gap-2">
               <img
                 className="object-cover h-10 w-10 rounded-full"

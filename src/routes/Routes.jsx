@@ -11,11 +11,13 @@ import Details from "../pages/Details";
 import BeAVolunteer from "../pages/BeAVolunteer";
 import UpdateVolunteer from "../pages/UpdateVolunteer";
 import AppliedPost from "../pages/AppliedPost";
+import ErrorPage from "../pages/ErrorPage";
 
 const Router = createBrowserRouter([
     {
         path: '/',
         element: <Main/>,
+        errorElement: <ErrorPage />,
         children: [
             {
               path: "/",

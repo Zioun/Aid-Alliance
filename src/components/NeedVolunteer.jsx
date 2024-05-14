@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 const NeedVolunteer = () => {
-  const [itemsPerPage, setItemsPerPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(6);
   const [currentPage, setCurrentPage] = useState(1);
   const [count, setCount] = useState(0);
   const [volunteer, setVolunteer] = useState([]);
@@ -54,49 +54,48 @@ const NeedVolunteer = () => {
   // handle box
   const handleBox = (e) => {
     e.preventDefault();
-    const cards = document.getElementById('cards');
-    const table = document.getElementById('table');
+    const cards = document.getElementById("cards");
+    const table = document.getElementById("table");
     if (cards) {
-      cards.classList.remove('hidden');
+      cards.classList.remove("hidden");
     }
     if (table) {
-      table.classList.add('hidden');
+      table.classList.add("hidden");
     }
-  }
+  };
   const handleTable = (e) => {
     e.preventDefault();
-    const table = document.getElementById('table');
-    const cards = document.getElementById('cards');
+    const table = document.getElementById("table");
+    const cards = document.getElementById("cards");
     if (table) {
-      table.classList.remove('hidden');
+      table.classList.remove("hidden");
     }
     if (cards) {
-      cards.classList.add('hidden');
+      cards.classList.add("hidden");
     }
-  }
-  
+  };
 
   return (
     <div className="container m-auto pb-5 px-6">
       <Helmet>
-                <title>AidAlliance - Need Volunteer</title>
-            </Helmet>
+        <title>AidAlliance - Need Volunteer</title>
+      </Helmet>
       <section className="bg-white dark:bg-gray-900">
         <div className="container px-6 pt-10 mx-auto text-center">
           <div className="mx-auto">
             <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
-              Our <span className="text-blue-500">Executive Team</span>
+              Need <span className="text-blue-500">Volunteer Page</span>
             </h1>
 
             <p className="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              incidunt ex placeat modi magni quia error alias, adipisci rem
-              similique, at omnis eligendi optio eos harum.
+              Get involved in our community! Whether it's event support or
+              administrative tasks, your help makes a real difference. Join us
+              today and be part of something meaningful!
             </p>
           </div>
         </div>
       </section>
-      
+
       <section className="bg-slate-100 rounded mb-10">
         <div className="pt-2 pb-5">
           <div className="flex justify-center">
@@ -152,7 +151,7 @@ const NeedVolunteer = () => {
                         class="py-3.5 px-4 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400"
                       >
                         <div class="flex items-center gap-x-3">
-                          <span>Name</span>
+                          <span>Post</span>
                         </div>
                       </th>
 
@@ -161,7 +160,7 @@ const NeedVolunteer = () => {
                         class="px-12 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400"
                       >
                         <button class="flex items-center gap-x-2">
-                          <span>Status</span>
+                          <span>Deadline</span>
                         </button>
                       </th>
 
@@ -170,7 +169,7 @@ const NeedVolunteer = () => {
                         class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400"
                       >
                         <button class="flex items-center gap-x-2">
-                          <span>Role</span>
+                          <span>Location</span>
                         </button>
                       </th>
 
@@ -178,14 +177,14 @@ const NeedVolunteer = () => {
                         scope="col"
                         class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400"
                       >
-                        Email address
+                        Author
                       </th>
 
                       <th
                         scope="col"
                         class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400"
                       >
-                        Teams
+                        Category
                       </th>
 
                       <th scope="col" class="relative py-3.5 px-4">
@@ -194,74 +193,78 @@ const NeedVolunteer = () => {
                     </tr>
                   </thead>
                   <tbody class="bg-white divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900">
-                    {volunteer.map(volunteer => <tr>
-                      <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                        <div class="inline-flex items-center gap-x-3">
-                          <div class="flex items-center gap-x-2">
-                            <img
-                              class="object-cover w-10 h-10 rounded"
-                              src={volunteer.thumbnail}
-                              alt=""
-                            />
-                            <div>
-                              <h2 class="font-medium text-gray-800 dark:text-white ">
-                                {volunteer.title && volunteer.title.substring(0, 15) + "....."}
-                              </h2>
-                              <p class="text-sm font-normal text-gray-600 dark:text-gray-400">
-                                {volunteer.title && volunteer.title.substring(0, 15) + "....."}
-                              </p>
+                    {volunteer.map((volunteer) => (
+                      <tr>
+                        <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
+                          <div class="inline-flex items-center gap-x-3">
+                            <div class="flex items-center gap-x-2">
+                              <img
+                                class="object-cover w-10 h-10 rounded"
+                                src={volunteer.thumbnail}
+                                alt=""
+                              />
+                              <div>
+                                <h2 class="font-medium text-gray-800 dark:text-white ">
+                                  {volunteer.title &&
+                                    volunteer.title.substring(0, 15) + "....."}
+                                </h2>
+                                <p class="text-sm font-normal text-gray-600 dark:text-gray-400">
+                                  {volunteer.title &&
+                                    volunteer.title.substring(0, 15) + "....."}
+                                </p>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </td>
-                      <td class="px-12 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                        <div class="inline-flex items-center px-3 py-1 rounded-full gap-x-2 text-gray-500">
-
-                          <h2 class="text-sm font-normal">
-                            {new Date(volunteer.deadline).toLocaleDateString()}
-                          </h2>
-                        </div>
-                      </td>
-                      <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                        {volunteer.location}
-                      </td>
-                      <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                        <div class="inline-flex items-center gap-x-3">
-                          <div class="flex items-center gap-x-2">
-                            <img
-                              class="object-cover w-10 h-10 rounded-full"
-                              src={volunteer.buyer.photo}
-                              alt=""
-                            />
-                            <div>
-                              <h2 class="font-medium text-gray-800 dark:text-white ">
-                              {volunteer.buyer.name}
-                              </h2>
-                              <p class="text-sm font-normal text-gray-600 dark:text-gray-400">
-                              {volunteer.buyer.email}
-                              </p>
+                        </td>
+                        <td class="px-12 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
+                          <div class="inline-flex items-center px-3 py-1 rounded-full gap-x-2 text-gray-500">
+                            <h2 class="text-sm font-normal">
+                              {new Date(
+                                volunteer.deadline
+                              ).toLocaleDateString()}
+                            </h2>
+                          </div>
+                        </td>
+                        <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                          {volunteer.location}
+                        </td>
+                        <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
+                          <div class="inline-flex items-center gap-x-3">
+                            <div class="flex items-center gap-x-2">
+                              <img
+                                class="object-cover w-10 h-10 rounded-full"
+                                src={volunteer.buyer.photo}
+                                alt=""
+                              />
+                              <div>
+                                <h2 class="font-medium text-gray-800 dark:text-white ">
+                                  {volunteer.buyer.name}
+                                </h2>
+                                <p class="text-sm font-normal text-gray-600 dark:text-gray-400">
+                                  {volunteer.buyer.email}
+                                </p>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </td>
-                      <td class="px-4 py-4 text-sm whitespace-nowrap">
-                        <div class="flex items-center gap-x-2">
-                          <p class="px-3 py-1 text-xs text-indigo-500 rounded-full dark:bg-gray-800 bg-indigo-100/60">
-                            {volunteer.category}
-                          </p>
-                        </div>
-                      </td>
-                      <td class="px-4 py-4 text-sm whitespace-nowrap">
-                        <div class="flex items-center gap-x-6">
-                        <Link to={`/volunteer/${volunteer._id}`}>
-                          <button class="badge bg-slate-900 text-white">
-                            Details
-                          </button>
-                        </Link>
-                        </div>
-                      </td>
-                    </tr>)}
-                    
+                        </td>
+                        <td class="px-4 py-4 text-sm whitespace-nowrap">
+                          <div class="flex items-center gap-x-2">
+                            <p class="px-3 py-1 text-xs text-indigo-500 rounded-full dark:bg-gray-800 bg-indigo-100/60">
+                              {volunteer.category}
+                            </p>
+                          </div>
+                        </td>
+                        <td class="px-4 py-4 text-sm whitespace-nowrap">
+                          <div class="flex items-center gap-x-6">
+                            <Link to={`/volunteer/${volunteer._id}`}>
+                              <button class="badge bg-slate-900 text-white">
+                                Details
+                              </button>
+                            </Link>
+                          </div>
+                        </td>
+                      </tr>
+                    ))}
                   </tbody>
                 </table>
               </div>

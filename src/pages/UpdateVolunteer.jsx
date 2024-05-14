@@ -5,6 +5,7 @@ import { AuthContext } from "../provider/AuthProvider";
 import { useLoaderData, useNavigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
+import Swal from "sweetalert2";
 
 const UpdateVolunteer = () => {
   const [startDate, setStartDate] = useState(new Date());
@@ -21,6 +22,12 @@ const UpdateVolunteer = () => {
     const location = form.location.value;
     const noOfVolunteersNeeded = form.noOfVolunteersNeeded.value;
     const description = form.description.value;
+    if(thumbnail === '' || title === '' || deadline === '' || category === '' || location === '' || noOfVolunteersNeeded === '' || description === ''){
+      return toast.error("Input Can't be empty")
+    }
+    if(noOfVolunteersNeeded < 1 ){
+      return toast.error("No of volunteers can't be less than 1")
+    }
     const volunteerData = {
       thumbnail,
       title,
@@ -41,7 +48,11 @@ const UpdateVolunteer = () => {
         volunteerData
       );
       console.log(data);
-      toast.success("Volunteer update Successfully!");
+      Swal.fire({
+        title: "Success!",
+        text: "Volunteer update Successfully!",
+        icon: "success"
+      });
       navigate("/need-volunteer");
     } catch (err) {
       console.log(err);

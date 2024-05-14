@@ -1,5 +1,8 @@
 import React from "react";
 ("use client");
+import { Link } from "react-router-dom";
+import { MdOutlineEmail } from "react-icons/md";
+import { MdOutlineLocalPhone } from "react-icons/md";
 
 import { Footer } from "flowbite-react";
 import {
@@ -26,17 +29,19 @@ const FooterBottom = () => {
           
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
             <div>
-              <Footer.Title title="about" />
+              <Footer.Title title="Page" />
               <Footer.LinkGroup col>
-                <Footer.Link href="#">Flowbite</Footer.Link>
-                <Footer.Link href="#">Tailwind CSS</Footer.Link>
+                <Footer.Link href="#"><Link to={"/"}>Home</Link></Footer.Link>
+                <Footer.Link href="#"><Link to={"/need-volunteer"}>Need Volunteer Page</Link></Footer.Link>
+                <Footer.Link href="#"><Link to={"/add-volunteer"}>Add Volunteer Page</Link></Footer.Link>
+                <Footer.Link href="#"><Link to={"/manage-my-post"}>Manage My Post</Link></Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
-              <Footer.Title title="Follow us" />
+              <Footer.Title title="Contact info" />
               <Footer.LinkGroup col>
-                <Footer.Link href="#">Github</Footer.Link>
-                <Footer.Link href="#">Discord</Footer.Link>
+                <Footer.Link href="#"><div className="flex items-center gap-2"><span><MdOutlineEmail /></span> jionkhan0@gmail.com</div></Footer.Link>
+                <Footer.Link href="#"><div className="flex items-center gap-2"><span><MdOutlineLocalPhone /></span> +880 1619971997</div></Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
@@ -50,7 +55,7 @@ const FooterBottom = () => {
         </div>
         <Footer.Divider />
         <div className="w-full sm:flex sm:items-center sm:justify-between">
-          <Footer.Copyright href="#" by="Flowbite™" year={2022} />
+          <Footer.Copyright href="#" by="AidAlliance" year={2024} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <Footer.Icon href="#" icon={BsFacebook} />
             <Footer.Icon href="#" icon={BsInstagram} />
