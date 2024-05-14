@@ -7,6 +7,7 @@ const PrivateRoute = ({children}) => {
     const { user, loader } = useContext(AuthContext);
     const [loading, setLoading] = useState(true);
     const location = useLocation();
+    
 
     useEffect(() => {
         const timer = setTimeout(() => {
