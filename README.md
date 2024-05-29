@@ -52,6 +52,12 @@ To access the website, click [here](https://volunteer-e5e10.web.app/).
   - **Flowbite**: Used Flowbite, an alternative Tailwind CSS library.
   - **Pagination**: Implemented pagination on the Need Volunteer Page to show 6-9 services per page.
 
+- **Update New Feature 🎉🎉🎉**: The Public Request feature lets you see who has requested to be a volunteer on your uploaded post. 
+
+- Photograph of the requester
+- Name of Requester
+- Requester's email
+
 
 
 ## Thanks

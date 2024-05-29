@@ -91,9 +91,9 @@ const Navigation = () => {
                 <li>
                   <NavLink to="/manage-my-post">Manage My Post</NavLink>
                 </li>
-                {/* <li>
+                <li>
                   <NavLink to="/applied-post">Public Request</NavLink>
-                </li> */}
+                </li>
               </ul>
             </details>
           </li>
@@ -149,9 +149,9 @@ const Navigation = () => {
             >
               <div
                 className="w-10 rounded-full"
-                title={user && user.displayName}
+                title={user && user?.displayName}
               >
-                <img alt="Tailwind CSS Navbar component" src={user.photoURL} />
+                <img alt="Tailwind CSS Navbar component" src={user?.photoURL} />
               </div>
             </div>
 

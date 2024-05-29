@@ -58,10 +58,10 @@ const Router = createBrowserRouter([
                 element: <PrivateRoute><UpdateVolunteer /></PrivateRoute>,
                 loader:({params})=>fetch(`${import.meta.env.VITE_API_URL}/volunteer/${params.id}`)
             },
-            // {
-            //     path: "/applied-post",
-            //     element: <PrivateRoute><AppliedPost /></PrivateRoute>,
-            // },
+            {
+                path: "/applied-post",
+                element: <PrivateRoute><AppliedPost /></PrivateRoute>,
+            },
             
           ],
     },

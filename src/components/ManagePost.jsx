@@ -462,7 +462,7 @@ const ManagePost = () => {
                                 class="text-gray-500 transition-colors duration-200 dark:hover:text-red-500 dark:text-gray-300 hover:text-red-500 focus:outline-none"
                               >
                                 <span className="badge bg-red-500 text-white">
-                                  Cancle
+                                  Cancel
                                 </span>
                               </button>
                             </div>
