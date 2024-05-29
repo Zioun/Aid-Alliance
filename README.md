@@ -54,9 +54,9 @@ To access the website, click [here](https://volunteer-e5e10.web.app/).
 
 - **Update New Feature 🎉🎉🎉**: The Public Request feature lets you see who has requested to be a volunteer on your uploaded post. 
 
-- Photograph of the requester
-- Name of Requester
-- Requester's email
+  - Photograph of the requester
+  - Name of Requester
+  - Requester's email
 
 
 
