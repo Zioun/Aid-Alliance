@@ -31,14 +31,20 @@ Explore the website [here](https://volunteer-e5e10.web.app/).
 - Tailwind CSS
 - Flowbite (Optional)
 
-## Getting Started
+## Installation Steps
 
-To get started with AidAlliance locally, follow these steps:
-
-1. Clone this repository.
-2. Install dependencies using `npm install`.
-3. Configure Firebase credentials.
-4. Start the development server using `npm start`.
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/Zioun/Aid-Alliance.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd folder-name
+    ```
+3. Install dependencies:
+    ```sh
+    npm install
+    ```
 
 ## Contributing
 
